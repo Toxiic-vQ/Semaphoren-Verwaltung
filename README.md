@@ -1,4 +1,4 @@
-<h2>This programm doens't work and I need your help to fix it</h2>
+<h2>This programm doesn't work and I need your help to fix it</h2>
 
 <h3>English:</h3>
 
