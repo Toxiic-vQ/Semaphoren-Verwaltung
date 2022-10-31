@@ -9,4 +9,4 @@ Thanks in advance.
 
 <h3>German Translation:</h3>
 
-Jungs, wieso geht der Mist hier nicht? Ich will den Output 'VVssVVssVVss...', aber anscheinend hab ich Semaphoren in C noch nciht ganz durchblickt.
+Jungs, wieso geht der Mist hier nicht? Ich will den Output 'VVssVVssVVss...', aber anscheinend hab ich Semaphoren in C noch nicht ganz durchblickt.
