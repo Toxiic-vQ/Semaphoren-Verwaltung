@@ -60,7 +60,7 @@ int main() {
 	//Ausgabepuffer leeren
 	setbuf(stdout, NULL);
 
-    for (int i =100; i>0; i--) {
+    	for (int i =100; i>0; i--) {
 
 		//Semaphore passieren + Fehlerüberprüfung
 		//ab hier beginnt der kritische Codeabschnitt
