@@ -1,8 +1,8 @@
 #include <stdio.h>		//für printf, setbuf, ...
 #include <stdlib.h>		//für exit
 #include <unistd.h>		//für fork
-#include <sys/ipc.h>	//für Semaphorenflags
-#include <sys/sem.h>	//für Semaphorenfunktionen
+#include <sys/ipc.h>		//für Semaphorenflags
+#include <sys/sem.h>		//für Semaphorenfunktionen
 #include <time.h>		//für Zufallszahlen
 
 //Funktion zum Simulieren von Wartezeiten
