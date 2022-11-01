@@ -16,7 +16,7 @@ In diesem Programm wird ein Prozess geforkt. Der Vater- sowie Kindprozess durchl
 - Prozess beenden 
 
 <h3> Nutzung und erwarteter Output: </h3>
-  Mithilfe des Makefile kann das Programm durch den Aufruf "make run" kompiliert und ausgeführt werden. <br> <br>
+  Mithilfe des Makefile kann das Programm durch den Aufruf 'make run' kompiliert und ausgeführt werden. <br> <br>
   
 ```
 felix@kubuntu:/sem-02$ make run
