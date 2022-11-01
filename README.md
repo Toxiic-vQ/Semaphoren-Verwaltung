@@ -1,12 +1,27 @@
-<h2>This programm doesn't work and I need your help to fix it :exclamation::exclamation::exclamation:</h2>
+<h2>Programm zur Verwaltung von Prozess mithilfe von Semaphoren</h2>
 
-<h3>English: :point_left:</h3>
+<h3>Programmbeschreibung: </h3>
+In diesem Programm wird ein Prozess geforkt. Der Vater- sowie Kindprozess durchlaufen eine Schleife 100 mal und sollen abwechselnd Zeichen ausgeben.
+  
+<h3>Grober Programmablauf: </h3>
+- Erstellung der Semaphorengruppe <br>
+- Initialisierung der Semaphorengruppe <br>
+- Prozess forken <br>
+- Schleife mit 100 Durchläufen: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Semaphore passieren (<b>Beginn des kritischen Codeabschnitts</b>) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wenn Prozess = Vater (PID > 0) --> Ausgabe "VV" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wenn Prozess = Kind (PID = 0) --> Ausgabe "ss" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Wartezeit simulieren <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Semaphore verlassen (<b>Ende des kritischen Codeabschnitts</b>) <br>
+- Prozess beenden 
 
-Hey guys, I'm an **aspiring** C-Develover :raising_hand::computer:, who is currently trying to wrap his head around semaphores. The output of this project should be something like 'VVssVVssVVss...', but there are still mistakes I guess. :broken_heart:
-If you have some time to spare and know about semaphores in C, please read the code and tell me what I'm doing wrong.
-Please help me to become the best C-developer so I can get a job at Twitter :bird: and print out my code for Elon! :fire::fire::fire::fire::fire:
-Thanks in advance.
-
-<h3>German Translation: :point_left:</h3>
-
-Jungs, wieso geht der Mist hier nicht? Ich will den Output 'VVssVVssVVss...', aber anscheinend hab ich Semaphoren in C noch nicht ganz durchblickt.
+<h3> Nutzung und erwarteter Output: </h3>
+  Mithilfe des Makefile kann das Programm durch "make run" kompiliert und ausgeführt werden. <br> <br>
+  
+```
+felix@kubuntu:/sem-02$ make run
+rm -vf sem-02.o
+gcc sem-02.c -o sem-02.o
+./sem-02.o
+VVssVVssVVssVVssVVssVVssVVssVVssVVssVVssVVssVVssVVssVVssVVssVVssVVssVVssVVssVVssVVssVVss
+```
