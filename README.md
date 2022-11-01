@@ -1,4 +1,4 @@
-<h2>Programm zur Verwaltung von Prozess mithilfe von Semaphoren</h2>
+<h2>Programm zur Verwaltung von Prozessen mithilfe von Semaphoren</h2>
 
 <h3>Programmbeschreibung: </h3>
 In diesem Programm wird ein Prozess geforkt. Der Vater- sowie Kindprozess durchlaufen eine Schleife 100 mal und sollen abwechselnd Zeichen ausgeben.
